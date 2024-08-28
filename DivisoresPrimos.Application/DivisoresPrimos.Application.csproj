@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DivisoresPrimos.Infra\DivisoresPrimos.Infra.csproj" />
+    <ProjectReference Include="..\DivisoresPrimos.Services\DivisoresPrimos.Services.csproj" />
   </ItemGroup>
 
 </Project>
